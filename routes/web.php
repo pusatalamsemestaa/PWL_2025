@@ -83,3 +83,6 @@ Route::resource('photos', PhotoController::class)->except([
     'update',
     'destroy'
 ]);
+
+Route::get('/greeting', [WelcomeController::class, 
+'greeting']); 
